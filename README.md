@@ -31,6 +31,14 @@ A complete, production-ready payment gateway integration demo built with **FastA
 │ Gateway │
 └─────────────┘
 
+##  📷Screenhsots of the streamlit app
+
+![Transcation History](D:\IIT project\COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-\Screenshots\Screenshot_2025-12-23 223546.png)
+
+![\Screenshots\Screenshot_2025-12-23 223546.png]
+
+
+
 
 
 ## 🛠️ Installation
