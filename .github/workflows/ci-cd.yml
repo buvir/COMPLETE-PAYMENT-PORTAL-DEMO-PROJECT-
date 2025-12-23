@@ -17,14 +17,23 @@ jobs:
       with:
         python-version: '3.11'
     
-    - name: Install Python packages
+    - name: Install dependencies
       run: |
-        pip install fastapi uvicorn pydantic email-validator
+        pip install fastapi==0.104.1 uvicorn==0.24.0 streamlit==1.28.1 requests==2.31.0 pydantic==2.5.0
     
-    - name: Test backend imports
+    - name: Test backend
       run: |
+        echo "Testing backend..."
         cd backend
         python -c "print('Testing imports...'); from main import app; print('✅ Backend imports successfully!')"
     
+    - name: Test frontend
+      run: |
+        echo "Testing frontend..."
+        cd frontend
+        python -c "import streamlit; print(f'✅ Streamlit v{streamlit.__version__}'); import requests; print('✅ Requests imported')"
+    
     - name: Success
-      run: echo "✅ All tests passed!"
+      run: |
+        echo "✅ CI/CD Pipeline completed successfully!"
+        echo "All tests passed!"
