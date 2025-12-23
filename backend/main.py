@@ -74,7 +74,8 @@ class Transaction(BaseModel):
 def generate_order_id(email: str) -> str:
     """Generate unique order ID"""
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-    email_hash = hashlib.md5(email.encode()).hexdigest()[:6].upper()
+    #email_hash = hashlib.md5(email.encode()).hexdigest()[:6].upper()
+    email_hash = hashlib.md5(email.encode(), usedforsecurity=False).hexdigest()[:6].upper()
     return f"ORD{timestamp}{email_hash}"
 
 def simulate_payment_gateway_call(order_data: dict) -> dict:
@@ -264,4 +265,7 @@ async def api_documentation():
 
 if __name__ == "__main__":
     import uvicorn
+    #uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+        # Development (keep as is for now, but add comment)
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    # Note: In production, use specific IP or load balancer

@@ -98,8 +98,8 @@ def simulate_webhook(order_id, status="success"):
             timeout=5
         )
         return response.status_code == 200
-    except:
-        return False
+    except requests.exceptions.RequestException as e:
+        st.error(f"Cannot connect to backend: {str(e)}")
 
 # Main application
 def main():
