@@ -1,3 +1,12 @@
 # AFTER (fixed):
-python-jose[cryptography]==3.4.0  # Fixed CVE-2024-33663
-python-multipart==0.0.18  # Fixed CVE-2024-53981 and CVE-2024-24762
+
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.18  # SECURITY FIXED
+httpx==0.25.1
+python-jose[cryptography]==3.4.0  # SECURITY FIXED
+passlib[bcrypt]==1.7.4
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.12.1
