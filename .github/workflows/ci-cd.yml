@@ -19,7 +19,7 @@ jobs:
     
     - name: Install Python packages
       run: |
-        pip install fastapi uvicorn pydantic
+        pip install fastapi uvicorn pydantic email-validator
     
     - name: Test backend imports
       run: |
