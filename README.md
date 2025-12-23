@@ -134,23 +134,27 @@ docker-compose up --build backend
 
 🧪 Testing
 
-```
 # Manual API testing
+
+```
 curl -X POST "http://localhost:8000/api/v1/payments" \
   -H "Content-Type: application/json" \
   -d '{"amount": 100, "currency": "INR", "customer_email": "test@example.com"}'
-
+```
 # Check health
+```
 curl http://localhost:8000/api/v1/health
 
 ```
-```
+
  Create virtual environment
+ ```
 python -m venv venv
 venv\Scripts\activate  # Windows
-
+```
 
 # 3. Install dependencies
+```
 pip install -r requirements.txt
 ````
 
@@ -164,3 +168,19 @@ pip install -r requirements.txt
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)
+
+
+
+Start Backend Server
+```
+# Terminal 1 - Backend
+cd backend
+uvicorn main:app --reload --port 8000
+```
+
+Start Frontend Server
+```
+# Terminal 2 - Frontend (Open NEW Terminal in VS Code)
+cd frontend
+streamlit run app.py
+```
