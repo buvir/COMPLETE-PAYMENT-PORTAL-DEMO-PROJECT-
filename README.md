@@ -153,3 +153,14 @@ venv\Scripts\activate  # Windows
 # 3. Install dependencies
 pip install -r requirements.txt
 ````
+
+## 📊 CI/CD Status
+
+[![CI/CD Pipeline](https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-/actions/workflows/ci-cd.yml)
+[![Code Quality](https://img.shields.io/codefactor/grade/github/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)](https://www.codefactor.io/repository/github/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## 🚀 Quick Deploy
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/buvir/COMPLETE-PAYMENT-PORTAL-DEMO-PROJECT-)
