@@ -1,0 +1,89 @@
+# =================================================================
+# PYTHON / VIRTUAL ENVIRONMENTS
+# =================================================================
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+share/
+include/
+pyvenv.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =================================================================
+# SENSITIVE DATA (CRITICAL: Never commit these!)
+# =================================================================
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Password and secret files
+passwords.py
+secrets.txt
+*.key
+*.pem
+
+# Streamlit specific secrets
+.streamlit/secrets.toml
+
+# =================================================================
+# PYTHON CACHE & BUILD
+# =================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =================================================================
+# DATABASES & LOGS
+# =================================================================
+*.db
+*.sqlite3
+*.log
+*.sql
+# Ignore local PGAdmin or similar tool exports
+*.csv
+*.xlsx
+
+# =================================================================
+# STREAMLIT & FRONTEND
+# =================================================================
+.streamlit/config.toml
+.streamlit/static/
+# Ignore node_modules if you use any JS components
+node_modules/
+
+# =================================================================
+# DATABASE MIGRATIONS (ALEMBIC)
+# =================================================================
+# Keep your migration versions, but ignore the compiled cache
+alembic/versions/__pycache__/
+
+# =================================================================
+# IDEs & SYSTEM FILES
+# =================================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

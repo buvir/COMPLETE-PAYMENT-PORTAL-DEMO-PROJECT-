@@ -144,3 +144,12 @@ curl -X POST "http://localhost:8000/api/v1/payments" \
 curl http://localhost:8000/api/v1/health
 
 ```
+```
+ Create virtual environment
+python -m venv venv
+venv\Scripts\activate  # Windows
+
+
+# 3. Install dependencies
+pip install -r requirements.txt
+````
