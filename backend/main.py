@@ -4,13 +4,17 @@ FastAPI backend with simulated payment processing
 """
 from fastapi import FastAPI, Request, HTTPException, Depends, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, Field
 from typing import Optional, List
+from typing import Optional
 import hashlib
 import uuid
 from datetime import datetime
 import json
 import os
+
+class PaymentRequest(BaseModel):
+    customer_email: str
 
 # Initialize FastAPI app
 app = FastAPI(
